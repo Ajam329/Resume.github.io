@@ -378,7 +378,6 @@ th{
   flex: 0.5;
   padding: 20px;
   height: 100%;
-  min-width: 400px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   background-color: #1B1C1E;
   position: relative;
