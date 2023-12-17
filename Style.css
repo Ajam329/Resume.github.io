@@ -107,10 +107,10 @@ body {
   max-height: 100vh; /* Set a maximum height for scrolling */
 }
 .resume-photo h1,h2{
-  font-size: 3vw;
+  font-size: 20px;
 }
 .resume-photo p {
-  font-size: 3vw; /* Adjust the font size using vw unit */
+  font-size: 20px; /* Adjust the font size using vw unit */
   max-width: 100%; /* Ensure the text doesn't overflow */
 }
 hr{
@@ -120,7 +120,7 @@ hr{
   margin: 20px 0;
 }
 .Name{
-  font-size: 3vw;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Sacramento', cursive;
 }
@@ -135,7 +135,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 3vw;
+  font-size: 20px;
 }
 
 td {
@@ -271,5 +271,6 @@ th{
 .resume-photo {
   width: 100%;
   max-height: none;
+  font-size: 3vw;
 }
 }
