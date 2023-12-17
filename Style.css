@@ -9,17 +9,6 @@ body {
   height: 100vh;
   font-family:'Courier New', Courier, monospace;
   overflow: hidden;
-}body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  background-color: #1B1C1E;
-  color: white;
-  height: 100vh;
-  font-family:'Courier New', Courier, monospace;
-  overflow: hidden;
 }
 .container{
   display: flex;
@@ -44,6 +33,7 @@ body {
 .logo-container i{
   font-size: 3vw; /* Adjust the width of the logos */
   margin-bottom: 20px;
+  
 }
 .logo-button i {
   font-size: 3vw; /* Adjust the width of the logos */
@@ -116,6 +106,10 @@ body {
   overflow-y: auto; /* Enable vertical scrolling */
   max-height: 100vh; /* Set a maximum height for scrolling */
 }
+.resume-photo p {
+  font-size: 4vw; /* Adjust the font size using vw unit */
+  max-width: 100%; /* Ensure the text doesn't overflow */
+}
 hr{
   border: none;
   height: 2px;
@@ -123,222 +117,10 @@ hr{
   margin: 20px 0;
 }
 .Name{
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Sacramento', cursive;
-}
-.About{
-  color: #48A271;
-  font-weight: bold;
-}
-.icon{
-  color: white;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td {
-  text-align: center;
-  padding: 10px; /* Add padding for better spacing */
-}
-
-th {
-  text-align: center;
-  padding: 10px; /* Add padding for better spacing */
-}
-
-/* Additional styling for better readability */
-table, th, td {
-  border: 1px solid white; /* Add borders */
-  color: white;
-}
-th{
-  font-weight: bold;
-  color: #48A271;
-}
-.Skills{
-  color: #48A271;
-  font-weight: bold;
-}
-.content-middle {
-  flex: 0.5;
-  padding: 20px;
-  height: 100%;
-  min-width: 300px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: #1B1C1E;
-  position: relative;
-  overflow: hidden;
-  background-image: url('photo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.character-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('photo_png.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.7s, transform 0.7s, box-shadow 0.7s;
-  transform-origin: center center;
-  box-shadow: 0 0 20px 10px rgba(72, 162, 113, 0.8);
-  backdrop-filter: blur(0px);
-}
-
-.content-middle:hover .character-overlay {
-  opacity: 1;
-  transform: scale(1.1);
-  box-shadow: 0 0 0 0 rgba(72, 162, 113, 0);
-  backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.text-overlay {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0);
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.text-overlay h1 {
-  padding-bottom: 30px;
-  margin: 0;
-  color:white;
   font-size: 4vw;
   font-weight: bold;
   font-family: 'Sacramento', cursive;
 }
-.content-middle:hover .text-overlay {
-  opacity: 1; /* Display the text on hover */
-}
-
-@media (max-width: 768px) {
-
-.slide-content {
-  width: 90%; /* Adjusted width with percentage unit */
-}
-}
-.container{
-  display: flex;
-  flex-direction: row;
-}
-.contact-sidebar {
-  width: 40px;
-  padding: 20px;
-  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
-  background-color: #1B1C1E;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.logo-container i{
-  font-size: 3vw; /* Adjust the width of the logos */
-  margin-bottom: 20px;
-}
-.logo-button i {
-  font-size: 3vw; /* Adjust the width of the logos */
-  margin-bottom: 20px; /* Adjust margin as needed */
-}
-.logo-container i:hover{
-  color: #48A271; /* Change color on hover */
-  transform: scale(1.5);
-}
-.logo-button {
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  border: none;
-  padding: 0;
-  transition: transform 0.3s ease-out;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Adjust the height of the sliding content */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for blur effect */
-  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
-  z-index: 2;
-  overflow: hidden;
-  transition: top 0.1s ease;  
-}
-
-.slide-content {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30%; /* Adjust the width of the sliding content */
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: #1B1C1E;
-  color: white;
-  border-radius: 15px;
-}
-.container {
-  display: flex;
-  flex: 1;
-}
-
-.contact-sidebar {
-  width: 40px; /* Adjusted sidebar width */
-  padding: 20px;
-  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
-  background-color: #1B1C1E;
-}
-.content-middle {
-  flex: 0.5; /* Adjust the flex value to control the width */
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: #1B1C1E;
-}
-.resume-photo {
-  flex: 1;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: #1B1C1E;
-}
-
-.resume-photo {
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 100vh; /* Set a maximum height for scrolling */
-}
-hr{
-  border: none;
-  height: 2px;
-  background-color: #3F3F42;
-  margin: 20px 0;
-}
-.Name{
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Sacramento', cursive;
-}
 .About{
   color: #48A271;
   font-weight: bold;
@@ -349,11 +131,14 @@ hr{
 table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 4vw;
 }
 
 td {
   text-align: center;
   padding: 10px; /* Add padding for better spacing */
+  word-wrap: break-word;
 }
 
 th {
@@ -427,8 +212,8 @@ th{
 }
 
 .text-overlay h1 {
-  margin: 0;
   padding-bottom: 30px;
+  margin: 0;
   color:white;
   font-size: 4vw;
   font-weight: bold;
@@ -439,8 +224,49 @@ th{
 }
 
 @media (max-width: 768px) {
+.container {
+  flex-direction: column; /* Change to column for smaller screens */
+  max-height: none;
+  overflow: auto;
+}
+.contact-sidebar {
+  height:20px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 5px;
+
+}
+.logo-container i{
+  font-size: 4vw; /* Adjust the width of the logos */
+  margin-right: 20px;
+}
+.logo-button i {
+  font-size: 4vw; /* Adjust the width of the logos */
+  margin-right: 20px; /* Adjust margin as needed */
+}
 
 .slide-content {
   width: 90%; /* Adjusted width with percentage unit */
+}
+.content-middle {
+  width: 100%;
+  background-size: contain;
+}
+.character-overlay{
+  background-size: contain;
+}
+.resume-photo {
+  width: 100%;
+  max-height: none;
 }
 }
